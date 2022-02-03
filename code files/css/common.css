@@ -1,0 +1,142 @@
+body{
+    background-color: rgba(45, 45, 61, 1);
+    position: absolute;
+    /*
+    overflow-x: hidden;
+    verflow-y: hidden;
+    */
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    min-width: 1280px;
+}
+#backimage{
+    position: fixed;
+    width: 100%;
+    min-width: 1280px;
+    opacity: 0.40;
+}
+.main{
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 50px;
+    background-color: rgba(40, 40, 40, 0.8);
+    color: #bd9200;
+    padding: 10px 40px 40px 40px;
+
+    overflow: hidden;
+    word-break: normal;
+    font-family: Times;
+    font-size: 120%;
+    transition-timing-function: ease-in-out;
+    border: 3px white solid;
+}
+.main a{
+    color: #795d00;
+    font-style: italic;
+}
+header{
+    color: #DDDDDD;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    height: 75px;
+    width: 60%;
+    min-width: 720px;
+    max-width: 1200px;
+    font-size: 120%;
+    overflow: hidden;
+    word-break: keep-all;
+    font-family: Times;
+    text-align: center;
+}
+.headeritem {
+    transition: 0.25s;
+    background: #9c70c6;
+    width: 33%;
+    height: 60px;
+    float: left;
+}
+.headeritem:hover {
+    transition: 0.25s;
+    background: #55555555;
+}
+.headertext {
+    position: relative;
+    top: 34%;
+    bottom: 66%;
+}
+
+.videoblock{
+    width:100%;
+}
+table{
+    text-align: center;
+    border-collapse: collapse;
+}
+tr{
+
+}
+td{
+    border:1px solid grey;
+}
+th{
+
+}
+
+.contectentry{
+    position: relative;
+    margin: 0px 0px 30px 0px;
+}
+
+ul.dropdown{
+    position: absolute;
+    left: 20%;
+    display: block;
+    margin: 0;
+    font-size: 120%;
+    white-space: nowrap;
+    color: #31005d;
+}
+ul.dropdown li {
+    position: relative;
+}
+ul.dropdown li.dropdown-top {
+    margin: 0;
+    float: left;
+    display: inline;
+}
+ul.dropdown li.dropdown-top a {
+    display: block;
+    padding: 3px 10px 4px;
+    color: #BD9200FF;
+}
+ul.dropdown li.dropdown-top a:hover {
+    text-decoration: underline;
+}
+ul.dropdown a.dropdown-top {
+    background: #2f2f2f;
+}
+ul.dropdown a.dropdown-top:hover {
+    padding: 3px 10px 4px;
+}
+ul.dropdown li.dropdown-top:hover .dropdown-inside {
+    left: 0;
+    display: block;
+}
+ul.dropdown, ul.dropdown-inside {
+    padding: 0;
+    list-style-type: none;
+}
+ul.dropdown-inside {
+    left: -9999px;
+    position: absolute;
+}
+ul.dropdown .dropdown-inside {
+    background: #545454;
+}
+ul.dropdown .dropdown-inside a:hover {
+    background: #2F2F2FFF;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="..\css\galary.css">
+    <title>Art galary</title>
+</head>
+<body>
+<img src="..\media\giant_dad.jpg" id = "backimage">
+<div class = "main" id = "main">
+    <form method="post" enctype="multipart/form-data">
+        <div>
+            <label for="image_uploads_selection">Choose images to upload (PNG, JPG)</label>
+            <input type="file" id="image_uploads_selection" name="image_uploads_selection" accept=".jpg, .jpeg, .png" multiple>
+            <br>
+            <label for="image_uploads_text">Type a URL of the image to upload (PNG, JPG)</label>
+            <input type="text" id="image_uploads_text" name="image_uploads_text">
+            <input type="button" value="Post image" id="img_text_btn">
+        </div>
+        <div class="preview" id="preview">
+            <p>No files currently selected for upload</p>
+        </div>
+    </form>
+
+    <p id="test_bugged" style="background: inherit;">test for bugged img(works with several reloads, probably due to scripts)</p>
+    <img src="placeholder" id="bugged">
+</div>
+<ul class="dropdown">
+    <li class="dropdown-top">
+        <a class="dropdown-top" href="#">Pages</a>
+        <ul class="dropdown-inside">
+            <li><a href="../index.html">About</a></li>
+        </ul>
+    </li>
+    <li class="dropdown-top">
+        <a class="dropdown-top" href="https://darksouls.fandom.com/f">Links</a>
+    </li>
+</ul>
+<script src = "..\JS\galary.js"> </script>
+</body>
+</html>

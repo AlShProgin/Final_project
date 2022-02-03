@@ -1,0 +1,49 @@
+@import url("common.css");
+.gameField {
+    margin: auto;
+    width: 650px;
+    height: 650px;
+    border: 1px solid white;
+    padding: 20px;
+}
+button{
+    cursor: pointer;
+
+    box-shadow: 0 3px 20px rgba(0,0,0,.25),
+    inset 0 2px 0 rgba(255,255,255,.6),
+    0 2px 0 rgba(0,0,0,.1),
+    inset 0 0 20px rgba(0,0,0,.1);
+}
+.startButton{
+    margin: 0px 0px 0px 0px;
+    width: 80px;
+    height: 30px;
+    background-color: white;
+}
+#counter{
+    margin: 0px;
+    width: 80px;
+    height: 30px;
+    color: black;
+    background-color: white;
+    box-shadow: inset 0 0 20px rgba(0,0,0,.2),
+    0 2px 0 rgba(255,255,255,.4),
+    inset 0 2px 0 rgba(0,0,0,.1);
+}
+.mole{
+    display: inline-block;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+}
+#moleActive{
+    background-color: black;
+}
+.button:hover {
+    box-shadow: inset 0 0 20px rgba(0,0,0,.2),
+    0 2px 0 rgba(255,255,255,.4),
+    inset 0 2px 0 rgba(0,0,0,.1);
+    background-color: white;
+}

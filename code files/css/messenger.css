@@ -1,0 +1,21 @@
+@import url("common.css");
+#chatBox form{
+    display: inline-block;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+
+.messagebox{
+    color: saddlebrown;
+    margin-top: 20px;
+    marginleft: 2%;
+}
+#inputForm{
+    position: relative;
+    margin-bottom: 0;
+}
+.friendlist{
+    position: relative;
+    left: 0;
+    top: 0;
+}

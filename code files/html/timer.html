@@ -1,0 +1,36 @@
+`<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="..\css\timer.css">
+    <title>Countdown</title>
+</head>
+<body>
+<img src="..\media\giant_dad.jpg" id = "backimage">
+<div class = "main" id = "main">
+    <!--<button onclick="Test();">Test</button>-->
+    <!--<button id="btn">Создать Promise!</button>-->
+    <div style="color: white;">
+        <p>The timer only accepts time in milliseconds</p>
+        <p>Max input value: 601000 - 10 minutes and 1 second</p>
+        <p>When the countdown is over you will be redirected to another page</p>
+    </div>
+    <input type="text" id="timeInput" placeholder="Enter the time">
+    <input type="button" value="Submit time" id="btn">
+
+    <div id="countdown">Countdown time</div>
+</div>
+<ul class="dropdown">
+    <li class="dropdown-top">
+        <a class="dropdown-top" href="#">Pages</a>
+        <ul class="dropdown-inside">
+            <li><a href="../index.html">About</a></li>
+        </ul>
+    </li>
+    <li class="dropdown-top">
+        <a class="dropdown-top" href="https://darksouls.fandom.com/f">Links</a>
+    </li>
+</ul>
+<script src = "..\JS\timer.js"> </script>
+</body>
+</html>

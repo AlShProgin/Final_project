@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="..\css\messenger.css">
+    <title>Messenger</title>
+    <script src = "..\JS\messenger.js"> </script>
+</head>
+<body>
+    <img src="..\media\giant_dad.jpg" id = "backimage">
+    <!--
+    <header>
+        <a href = "index2.html">
+            <div class = "headeritem">
+                <div class = "headertext">
+                    Заголовок №1
+                </div>
+            </div>
+        </a>
+        <a href="index2.html">
+            <div class = "headeritem">
+                <div class = "headertext">
+                    Заголовок №2
+                </div>
+            </div>
+        </a>
+        <a href="index2.html">
+            <div class = "headeritem">
+                <div class = "headertext">
+                    Заголовок №3
+                </div>
+            </div>
+        </a>
+    </header>
+    -->
+    <div class = "main" id = "main">
+        <div id = "selection"></div>
+        <div>
+            <p>This version allows to spawn messages (entered in the left menu) on the screen</p>
+            <p>The list on the right's a WIP of the <i>"friend list"</i> - it currently allows to add and delete elements</p>
+            <p>Saving and loading chat history between sessions and switching between chats is WIP</p>
+        </div>
+        <div id="chatBox" name="chatBox" class="test">
+            <form id = "messageInputForm" name = "messageInputForm">
+                <p>
+                    <input type="text" name="messagevalue" placeholder="Enter message">
+                </p>
+                <input type="button" value="Отправить" onClick="Send();">
+                <input type="button" value="Очистить переписку" onClick="Delete();">
+            </form>
+            <form id = "friendListForm" name  ="friendListForm">
+                <select name="friendList" id="friendList" size="1" onchange="changeOption()"></select>
+                <p>
+                    <input type="text" name="textInput" placeholder="Enter name">
+                </p>
+                <p>
+                    <input type="button" value="Add" onClick="addOption();">
+                    <input type="button" value="Delete" onClick="removeOption();">
+                </p>
+            </form>
+        </div>
+    </div>
+    <ul class="dropdown">
+        <li class="dropdown-top">
+            <a class="dropdown-top" href="#">Pages</a>
+            <ul class="dropdown-inside">
+                <li><a href="../index.html">About</a></li>
+            </ul>
+        </li>
+        <li class="dropdown-top">
+            <a class="dropdown-top" href="https://darksouls.fandom.com/f">Links</a>
+        </li>
+    </ul>
+</body>
+</html>
